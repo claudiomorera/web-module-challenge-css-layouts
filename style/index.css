@@ -1,1 +1,98 @@
 /* Add CSS styling here */
+/*css reset*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/*navigation design*/
+body {
+    font-family: sans-serif;
+}
+header, footer {
+    background-color: #d3d3d3;
+}
+h1 {
+    margin: 0 0 1% 2%;
+    padding-top:2%;
+}
+.navbar {
+    margin-left:3%;
+    display:flex;
+    padding-bottom: 1.3%;
+}
+a {
+    background-color: #fff;
+    padding:0.5% 1%;
+    border:1px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+/*head-section design*/
+.head-section {
+    display: flex;
+}
+.head-image {
+    width:50%;
+    margin: 1% 0 0 5%;
+}
+.head-image > img {
+    width:90%;
+    border-radius: 2%;
+}
+.head-text {
+    width:50%;
+}
+.head-text > h2 {
+    margin:6% 0 2% 0;
+}
+/*.head-text > a {
+    padding:0.5% 1%;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+}*/
+.head-text > a:hover {
+    color: #fff;
+    background-color: #000;
+}
+.head-text > p {
+    margin-top: 2%;
+    width: 50%;
+}
+/*main-section design*/
+.main-section {
+    margin-top:2%;
+    display: flex;
+    height:80vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.main-section > div {
+
+    width: 25vw;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer design */
+footer {
+    text-align: center;
+    height:20vh;
+}
+footer > h2 {
+    padding-top:2%;
+    margin-bottom: 2%;
+}
+footer > .social-media {
+    display:flex;
+    justify-content: space-evenly;
+}
