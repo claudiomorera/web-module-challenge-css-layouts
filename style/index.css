@@ -263,9 +263,26 @@ span.linked-span {
         display: flex;
         justify-content: space-around;
     }
-    .text-adj {
+    /*.text-adj {
        width: 13.7rem;
+    }*/
+}
+/*add accessiblity screen reader (everything is on github readme file)*/
+/* tablet adaption */
+@media (max-width:800px) {
+    a {
+        font-size: large;
+        padding: 3px 15px 3px 15px;
+    }
+    p {
+        font-size: medium;
+    }
+    .main-section div {
+        width: 75%;
+        
+    }
+    .main-section div img {
+        width: 30%;
+
     }
 }
-
-/* tablet adaption */
