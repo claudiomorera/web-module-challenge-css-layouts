@@ -203,6 +203,9 @@ span.linked-span {
         margin: 1% 0;
         padding: 2% 0;
     }
+    a:active {
+        background-color: #000;
+    }
     /*top/head section*/
     .head-section {
         display: flex;
@@ -252,7 +255,7 @@ span.linked-span {
     footer {
         margin-top: 15%;
         padding-top:3%;
-        height: 25vh;
+        height: 20vh;
         background-color: #d3d3d3;
     }
     footer h2 {
@@ -270,30 +273,33 @@ span.linked-span {
         display: flex;
         justify-content: space-around;
     }
-    /*.text-adj {
-       width: 13.7rem;
-    }*/
+    
 }
 /*add accessiblity screen reader (everything is on github readme file)*/
 /* tablet adaption */
-@media (max-width:800px) {
-   /* a {
-        font-size: large;
-        padding: 3px 15px 3px 15px;
+@media (min-width:520px) and (max-width:800px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin:0;
+        max-width: 100%;
     }
-    p {
-        font-size: medium;
-    }
-    .images {
-        width: 20%;
-        margin-left:10%;
-        
-    }
-    .portafolio {
-       margin:0 1%;
-    }
-    .portafolio img {
-        width: 100%;
-       
-    }*/
+   html {
+    font-size: medium;
+   }
+   a:active {
+    background-color: #000;
+   }
+   .head-image {
+    margin-top:4%;
+   }
+   .head-text > p {
+    width:79%;
+   }
+   .head-text > div {
+    margin-left: 20%;
+   }
+   footer {
+    height: 20vh;
+   }
 }
