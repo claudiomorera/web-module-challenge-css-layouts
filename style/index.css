@@ -49,14 +49,14 @@ table {
 	border-spacing: 0;
 }
 /* ======================================= CSS RESET ABOVE THIS LINE =================================== */
-
-
-/*navigation design*/
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
+    max-width: 100%;
 }
+
+/*navigation design*/
 
 html {
     font-size: 62.5%;
@@ -94,6 +94,7 @@ h1 {
 
 .head-section {
     display: flex;
+    justify-content: center;
 }
 .head-image {
     width:50%;
@@ -110,38 +111,35 @@ h1 {
     margin:6% 0 2% 0;
     font-size: 2rem;
 }
-/*.head-text > a {
-    padding:0.5% 1%;
-    border: 1px solid #000;
-    text-decoration: none;
-    color: #000;
-}*/
-.head-text > a:hover {
-    color: #fff;
-    background-color: #000;
-}
+
 .head-text > p {
     margin-top: 2%;
     width: 50%;
 }
-/*main-section design*/
-.main-section {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.main-section > div {
+/*images-section design*/
+
+.images {
     margin-top: 2%;
+    margin-bottom:2%;
     display: flex;
-    flex-flow: wrap row;
+    flex-flow: row wrap;
     justify-content: space-around;
-    width:70vw;
-    align-content: center;
+    width: 100%;
 }
-.main-section > div > img {
-    width: 15vw; 
-    padding:0 2% 2% 2%;
+.portafolio {
+    width: 25%;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: column;
+    align-items: center;
 }
+.portafolio img {
+    border-radius: 3%;
+    border:1px solid #ddd;
+    padding:5px;
+    width:50%;
+}
+
 /* footer design */
 footer {
     text-align: center;
@@ -165,20 +163,15 @@ footer > .social-media {
 }
 .social-media > a.linkedIn {
 	color:blue;
-	background-color:;
 }
 span.linked-span {
 	background-color: blue;
 	color: #fff;
 }
+
 /* mobile adaption */
 @media (max-width:500px) {
-    * {
-        box-sizing: border-box;
-        padding:0;
-        margin:0;
-        max-width: 100%;
-    }
+    
     html {
         font-size: 62.5%;
     }
@@ -186,22 +179,31 @@ span.linked-span {
         text-align: center;
         font-size: 1.5rem;
     }
+    /*header section*/
     h1 {
         font-size: 3rem;
     }
-    .navbar {
-        display:flex;
+    header {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        
+        width: 100%;
+
     }
-    .navbar > a {
-        padding:2% 10% 2% 10%;
-        text-align: center;
+    /*navagation inside header section*/
+    .navbar {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
-    
+    nav a {
+        width: 40%;
+        margin: 1% 0;
+        padding: 2% 0;
+    }
+    /*top/head section*/
     .head-section {
         display: flex;
         flex-direction: column;
@@ -228,20 +230,25 @@ span.linked-span {
         padding-left: 8%;
         padding-right: 8%;
     }
-    .main-section > div > img {
-        width: 50%; 
-        padding:0 2% 2% 2%;
-    }
-    
-    .main-section > div {
-        
-        width: 100%;
+    /*add-images section*/
+
+    .images {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
+        align-content: center;
+    }
+    .portafolio {
+        width:40%;
+        margin: 4% 0;
         
     }
+    .portafolio img {
+        width:100%;
+    }
+
+    /*footer section*/
+    
     footer {
         margin-top: 15%;
         padding-top:3%;
@@ -270,19 +277,23 @@ span.linked-span {
 /*add accessiblity screen reader (everything is on github readme file)*/
 /* tablet adaption */
 @media (max-width:800px) {
-    a {
+   /* a {
         font-size: large;
         padding: 3px 15px 3px 15px;
     }
     p {
         font-size: medium;
     }
-    .main-section div {
-        width: 75%;
+    .images {
+        width: 20%;
+        margin-left:10%;
         
     }
-    .main-section div img {
-        width: 30%;
-
+    .portafolio {
+       margin:0 1%;
     }
+    .portafolio img {
+        width: 100%;
+       
+    }*/
 }
